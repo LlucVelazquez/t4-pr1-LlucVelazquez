@@ -7,4 +7,11 @@
     <RootNamespace>t4_pr1_LlucVelazquez</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="ModelData\" />
+    <Folder Include="static\images\" />
+    <Folder Include="Tools\" />
+  </ItemGroup>
+
 </Project>
