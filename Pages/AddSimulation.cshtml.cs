@@ -19,7 +19,10 @@ namespace t4_pr1_LlucVelazquez.Pages
                 return Page();
             }
             string filePath = @"ModelData\simulacions_energia.csv";
-            string? simulationS = $"{NewSimulation.Date = DateTime.Now},{NewSimulation.TypeSim},{NewSimulation.Valor},{NewSimulation.Rati},{NewSimulation.EnergyGen},{NewSimulation.Cost},{NewSimulation.Preu},{NewSimulation.CostTotal},{NewSimulation.PreuTotal}";
+            string? simulationS = $"{NewSimulation.Date = DateTime.Now},{NewSimulation.TypeSim}," +
+                $"{NewSimulation.Valor},{NewSimulation.Rati},{NewSimulation.EnergyGen},{NewSimulation.Cost},{NewSimulation.Preu}," +
+                $"{NewSimulation.CostTotal = NewSimulation.Cost * ((decimal)NewSimulation.EnergyGen)}," +
+                $"{NewSimulation.PreuTotal = NewSimulation.Preu * ((decimal)NewSimulation.EnergyGen)}";
             if(System.IO.File.Exists(filePath))
             {
                 System.IO.File.AppendAllText(filePath, simulationS + Environment.NewLine);

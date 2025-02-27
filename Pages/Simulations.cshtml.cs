@@ -25,9 +25,9 @@ namespace t4_pr1_LlucVelazquez.Pages
 					Simulation simulation = new Simulation();
 					simulation.Date = DateTime.Parse(parts[0]);
 					simulation.TypeSim = parts[1];
-					simulation.Valor = float.Parse(parts[2]);
-					simulation.Rati = float.Parse(parts[3]);
-					simulation.EnergyGen = float.Parse(parts[4]);
+					simulation.Valor = double.Parse(parts[2]);
+					simulation.Rati = double.Parse(parts[3]);
+					simulation.EnergyGen = double.Parse(parts[4]);
 					simulation.Cost = decimal.Parse(parts[5]);
 					simulation.Preu = decimal.Parse(parts[6]);
 					simulation.CostTotal = decimal.Parse(parts[7]);
