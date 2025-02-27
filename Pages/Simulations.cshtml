@@ -5,3 +5,34 @@
 }
 <h1>Simulacions</h1>
 <br/>
+<table class="table">
+	<thead>
+		<tr>
+			<td>Date</td>
+			<td>Simulacions</td>
+			<td>Valor</td>
+			<td>Rati</td>
+			<td>Energia Generada</td>
+			<td>Cost</td>
+			<td>Preu</td>
+			<td>Cost Total</td>
+			<td>Preu Total</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var p in Model.Simulations)
+		{
+			<tr>
+				<td>@p.Date</td>
+				<td>@p.TypeSim</td>
+				<td>@p.Valor</td>
+				<td>@p.Rati</td>
+				<td>@p.EnergyGen</td>
+				<td>@p.Cost</td>
+				<td>@p.Preu</td>
+				<td>@p.CostTotal</td>
+				<td>@p.PreuTotal</td>
+			</tr>
+		}
+	</tbody>
+</table>
