@@ -35,6 +35,17 @@ namespace t4_pr1_LlucVelazquez.Pages
 					Simulations.Add(simulation);
 				}
 			}
+
+			/*if (System.IO.File.Exists(CsvFilePath))
+			{
+				using var reader = new StreamReader(CsvFilePath);
+				using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+				Simulations = csv.GetRecords<Simulation>().ToList();
+			}
+			else 
+			{
+				//TODO
+			}*/
 		}
     }
 }

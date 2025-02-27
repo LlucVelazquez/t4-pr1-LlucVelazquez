@@ -8,13 +8,13 @@
 <table class="table">
 	<thead>
 		<tr>
-			<td>Date</td>
-			<td>Simulacions</td>
+			<td>Data</td>
+			<td>Sistema Energia</td>
 			<td>Valor</td>
 			<td>Rati</td>
 			<td>Energia Generada</td>
-			<td>Cost</td>
-			<td>Preu</td>
+			<td>Cost kWh</td>
+			<td>Preu kWh</td>
 			<td>Cost Total</td>
 			<td>Preu Total</td>
 		</tr>
@@ -36,3 +36,5 @@
 		}
 	</tbody>
 </table>
+<a asp-page="/AddSimulation" class="btn btn-primary">Afegir Simulacio</a>
+<p>Quantitat de registres: @Model.Simulations.Count()</p>
