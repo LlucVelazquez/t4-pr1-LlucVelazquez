@@ -8,10 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="ModelData\" />
-    <Folder Include="static\images\" />
+    <Folder Include="wwwroot\images\" />
     <Folder Include="Tools\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\image.jpg" />
+    <None Include="wwwroot\images\logo.jpg" />
+    <None Include="wwwroot\images\practica-banner.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
   </ItemGroup>
 
 </Project>

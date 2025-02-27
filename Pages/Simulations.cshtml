@@ -1,0 +1,40 @@
+﻿@page
+@model t4_pr1_LlucVelazquez.Pages.SimulationsModel
+@{
+	ViewData["Title"] = "Simulacions";
+}
+<h1>Simulacions</h1>
+<br/>
+<table class="table">
+	<thead>
+		<tr>
+			<td>Data</td>
+			<td>Sistema Energia</td>
+			<td>Valor</td>
+			<td>Rati</td>
+			<td>Energia Generada</td>
+			<td>Cost kWh</td>
+			<td>Preu kWh</td>
+			<td>Cost Total</td>
+			<td>Preu Total</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var p in Model.Simulations)
+		{
+			<tr>
+				<td>@p.Date</td>
+				<td>@p.TypeSim</td>
+				<td>@p.Valor</td>
+				<td>@p.Rati</td>
+				<td>@p.EnergyGen</td>
+				<td>@p.Cost</td>
+				<td>@p.Preu</td>
+				<td>@p.CostTotal</td>
+				<td>@p.PreuTotal</td>
+			</tr>
+		}
+	</tbody>
+</table>
+<a asp-page="/AddSimulation" class="btn btn-primary">Afegir Simulacio</a>
+<p>Quantitat de registres: @Model.Simulations.Count()</p>
