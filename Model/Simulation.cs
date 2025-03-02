@@ -4,9 +4,9 @@
 	{
 		public DateTime Date {  get; set; }
 		public string TypeSim { get; set; }
-		public float Valor { get; set; }
-		public float Rati { get; set; }
-		public float EnergyGen { get; set; }
+		public double Valor { get; set; }
+		public double Rati { get; set; }
+		public double EnergyGen { get; set; }
 		public decimal Cost { get; set; }
 		public decimal Preu {  get; set; }
 		public decimal CostTotal { get; set; }
