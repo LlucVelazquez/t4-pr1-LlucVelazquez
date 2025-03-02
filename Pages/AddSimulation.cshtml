@@ -7,7 +7,11 @@
 <form method="post">
 	<div class="form-group">
 		<label asp-for="NewSimulation.TypeSim"></label>
-		<input asp-for="NewSimulation.TypeSim" class="form-control" />
+		<select name="NewSimulation.TypeSim" id="NewSimulation.TypeSim">
+			<option value="Sistema Solar">Sistema Solar</option>
+			<option value="Sisteme Eolic">Sistema Eolic</option>
+			<option value="Sistema Hidroelectric">Sistema Hidroelectric</option>
+		</select>
 		<span asp-validation-for="NewSimulation.TypeSim"></span>
 	</div>
 	<div class="form-group">
@@ -19,11 +23,6 @@
 		<label asp-for="NewSimulation.Rati"></label>
 		<input asp-for="NewSimulation.Rati" class="form-control" />
 		<span asp-validation-for="NewSimulation.Rati" class="alert-danger"></span>
-	</div>
-	<div class="form-group">
-		<label asp-for="NewSimulation.EnergyGen"></label>
-		<input asp-for="NewSimulation.EnergyGen" class="form-control" />
-		<span asp-validation-for="NewSimulation.EnergyGen"></span>
 	</div>
 	<div class="form-group">
 		<label asp-for="NewSimulation.Cost"></label>
