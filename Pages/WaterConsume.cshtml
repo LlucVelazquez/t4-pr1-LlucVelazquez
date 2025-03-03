@@ -1,0 +1,39 @@
+﻿@page
+@model t4_pr1_LlucVelazquez.Pages.WaterConsumeModel
+@{
+    ViewData["Title"] = "Consums d'aigua";
+}
+<h1>Simulacions</h1>
+<br />
+<table class="table">
+	<thead>
+		<tr>
+			<td>Any</td>
+			<td>Codi comarca</td>
+			<td>Comarca</td>
+			<td>Població</td>
+			<td>Domèstic xarxa</td>
+			<td>Activitats econòmiques i fonts pròpies</td>
+			<td>Total</td>
+			<td>Consum domèstic per càpita</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var p in Model.WaterConsumes)
+		{
+			<tr>
+				<td>@p.Year</td>
+				<td>@p.Code</td>
+				<td>@p.Region</td>
+				<td>@p.Population</td>
+				<td>@p.DomesticNetwork</td>
+				<td>@p.EconomicActOwnSource</td>
+				<td>@p.Total</td>
+				<td>@p.HouseholdConsumCapita</td>
+			</tr>
+		}
+	</tbody>
+</table>
+<a asp-page="/AddSimulation" class="btn btn-primary">Afegir Consum Aigua</a>
+<p>Quantitat de registres: @Model.WaterConsumes.Count()</p>
+<p>@Model.FileErrorMessage</p>
