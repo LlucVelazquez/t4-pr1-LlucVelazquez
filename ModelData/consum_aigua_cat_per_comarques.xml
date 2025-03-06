@@ -1,1 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Consumes>
+  <waterConsume>
+    <Year>3456</Year>
+    <Code>234567</Code>
+    <Region>rtyui</Region>
+    <Population>34567</Population>
+    <DomesticNetwork>3456789</DomesticNetwork>
+    <EconomicActOwnSource>2453678</EconomicActOwnSource>
+    <Total>3425678</Total>
+    <HouseholdConsumCapita>324567</HouseholdConsumCapita>
+  </waterConsume>
+  <waterConsume>
+    <Year>45678</Year>
+    <Code>324567</Code>
+    <Region>ertyuklj</Region>
+    <Population>234567</Population>
+    <DomesticNetwork>3425678</DomesticNetwork>
+    <EconomicActOwnSource>3425678</EconomicActOwnSource>
+    <Total>3245678</Total>
+    <HouseholdConsumCapita>3456789</HouseholdConsumCapita>
+  </waterConsume>
+</Consumes>
