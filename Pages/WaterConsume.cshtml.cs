@@ -6,6 +6,9 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Formats.Asn1;
 using CsvHelper;
+using System.Xml;
+using System.Xml.Linq;
+using System.Linq;
 
 namespace t4_pr1_LlucVelazquez.Pages
 {
@@ -16,7 +19,7 @@ namespace t4_pr1_LlucVelazquez.Pages
         public void OnGet()
         {
             string CsvFilePath = @"ModelData\consum_aigua_cat_per_comarques.csv";
-            if (System.IO.File.Exists(CsvFilePath))
+            if (FileWorking.File.Exists(CsvFilePath))
             {
                 using var reader = new StreamReader(CsvFilePath);
                 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
@@ -26,6 +29,24 @@ namespace t4_pr1_LlucVelazquez.Pages
             {
                 FileErrorMessage = "Error de carrega de dades";
             }
+            /*var consums = new List<WaterConsume>();
+            var xmlDoc = XDocument.Load(@"ModelData\consum_aigua_cat_per_comarques.xml");
+
+            foreach (var element in xmlDoc.Root.Elements("waterConsume"))
+            {
+                consums.Add(new WaterConsume
+                {
+                    Year = int.Parse(element.Element("Year").Value),
+                    Code = int.Parse(element.Element("Code").Value),
+                    Region = element.Element("nom_comarca").Value,
+                    Population = int.Parse(element.Element("Population").Value),
+                    DomesticNetwork = int.Parse(element.Element("DomesticNetwork").Value),
+                    EconomicActOwnSource = int.Parse(element.Element("EconomicActOwnSource").Value),
+                    Total = int.Parse(element.Element("Total").Value),
+                    HouseholdConsumCapita = decimal.Parse(element.Element("HouseholdConsumCapita").Value)
+                });
+            }
+            WaterConsumes = WaterConsumes.Concat(consums).ToList();*/
         }
     }
 }
