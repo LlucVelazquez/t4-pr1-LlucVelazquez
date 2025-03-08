@@ -1,0 +1,52 @@
+﻿@page
+@model t4_pr1_LlucVelazquez.Pages.AddWaterConsumeModel
+@{
+    ViewData["Title"] = "Afegeix nou consum d'aigua";
+}
+<h1>Afegir una nova Simulacio</h1>
+<form method="post">
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.Year"></label>
+		<input asp-for="NewWaterConsume.Year" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.Year" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.Code"></label>
+		<input asp-for="NewWaterConsume.Code" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.Code" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.Region"></label>
+		<input asp-for="NewWaterConsume.Region" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.Region" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.Population"></label>
+		<input asp-for="NewWaterConsume.Population" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.Population" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.DomesticNetwork"></label>
+		<input asp-for="NewWaterConsume.DomesticNetwork" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.DomesticNetwork" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.EconomicActOwnSource"></label>
+		<input asp-for="NewWaterConsume.EconomicActOwnSource" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.EconomicActOwnSource" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.Total"></label>
+		<input asp-for="NewWaterConsume.Total" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.Total" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewWaterConsume.HouseholdConsumCapita"></label>
+		<input asp-for="NewWaterConsume.HouseholdConsumCapita" class="form-control" />
+		<span asp-validation-for="NewWaterConsume.HouseholdConsumCapita" class="alert-danger"></span>
+	</div>
+	<button type="submit" class="btn btn-primary">Afegir</button>
+</form>
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
