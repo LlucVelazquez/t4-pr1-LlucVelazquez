@@ -1,4 +1,6 @@
-﻿namespace t4_pr1_LlucVelazquez.Model
+﻿using CsvHelper.Configuration.Attributes;
+
+namespace t4_pr1_LlucVelazquez.Model
 {
     public class EnergyIndicator
     {
@@ -19,23 +21,41 @@
         public decimal CDEEBC_DemandaElectr { get; set; }
         public string CDEEBC_TotalEBCMercatRegulat { get; set; }
         public string CDEEBC_TotalEBCMercatLliure { get; set; }
+        [Ignore]
         public decimal FEE_Industria { get; set; }
+        [Ignore]
         public decimal FEE_Terciari { get; set; }
+        [Ignore]
         public decimal FEE_Domestic { get; set; }
+        [Ignore]
         public decimal FEE_Primari { get; set; }
+        [Ignore]
         public decimal FEE_Energetic { get; set; }
+        [Ignore]
         public decimal FEEI_ConsObrPub { get; set; }
+        [Ignore]
         public decimal FEEI_SiderFoneria { get; set; }
+        [Ignore]
         public decimal FEEI_Metalurgia { get; set; }
+        [Ignore]
         public decimal FEEI_IndusVidre { get; set; }
+        [Ignore]
         public decimal FEEI_CimentsCalGuix { get; set; }
+        [Ignore]
         public decimal FEEI_AltresMatConstr { get; set; }
+        [Ignore]
         public decimal FEEI_QuimPetroquim { get; set; }
+        [Ignore]
         public decimal FEEI_ConstrMedTrans { get; set; }
+        [Ignore]
         public decimal FEEI_RestaTransforMetal { get; set; }
+        [Ignore]
         public decimal FEEI_AlimBegudaTabac { get; set; }
+        [Ignore]
         public decimal FEEI_TextilConfecCuirCalçat { get; set; }
+        [Ignore]
         public decimal FEEI_PastaPaperCartro { get; set; }
+        [Ignore]
         public decimal FEEI_AltresIndus { get; set; }
         public decimal DGGN_PuntFrontEnagas { get; set; }
         public decimal DGGN_DistrAlimGNL { get; set; }
