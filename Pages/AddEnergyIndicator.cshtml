@@ -1,4 +1,32 @@
 ﻿@page
 @model t4_pr1_LlucVelazquez.Pages.AddEnergyIndicatorModel
 @{
+    ViewData["Title"] = "Afegeix un nou indicador de energia";
+}
+<h1>Afegir una nova Simulacio</h1>
+<form method="post">
+	<div class="form-group">
+		<label asp-for="NewEnergyIndicator.Data"></label>
+		<input asp-for="NewEnergyIndicator.Data" class="form-control" />
+		<span asp-validation-for="NewEnergyIndicator.Data" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewEnergyIndicator.CDEEBC_ProdNeta"></label>
+		<input asp-for="NewEnergyIndicator.CDEEBC_ProdNeta" class="form-control" />
+		<span asp-validation-for="NewEnergyIndicator.CDEEBC_ProdNeta" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewEnergyIndicator.CDEEBC_ProdDisp"></label>
+		<input asp-for="NewEnergyIndicator.CDEEBC_ProdDisp" class="form-control" />
+		<span asp-validation-for="NewEnergyIndicator.CDEEBC_ProdDisp" class="alert-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="NewEnergyIndicator.CCAC_GasolinaAuto"></label>
+		<input asp-for="NewEnergyIndicator.CCAC_GasolinaAuto" class="form-control" />
+		<span asp-validation-for="NewEnergyIndicator.CCAC_GasolinaAuto" class="alert-danger"></span>
+	</div>
+	<button type="submit" class="btn btn-primary">Afegir</button>
+</form>
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
 }
