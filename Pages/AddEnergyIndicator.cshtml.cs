@@ -35,7 +35,7 @@ namespace t4_pr1_LlucVelazquez.Pages
             string jsonString = JsonSerializer.Serialize(energyIndicator);
             System.IO.File.AppendAllText(filePath, jsonString);
 
-            return RedirectToPage("EnergyIndicator");
+            return RedirectToPage("EnergyIndicators");
         }
     }
 }
