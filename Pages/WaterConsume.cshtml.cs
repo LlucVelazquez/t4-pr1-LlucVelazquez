@@ -29,24 +29,24 @@ namespace t4_pr1_LlucVelazquez.Pages
             {
                 FileErrorMessage = "Error de carrega de dades";
             }
-            /*var consums = new List<WaterConsume>();
+            var consums = new List<WaterConsume>();
             var xmlDoc = XDocument.Load(@"ModelData\consum_aigua_cat_per_comarques.xml");
 
-            foreach (var element in xmlDoc.Root.Elements("waterConsume"))
+            foreach (var element in xmlDoc.Root.Elements())
             {
                 consums.Add(new WaterConsume
                 {
                     Year = int.Parse(element.Element("Year").Value),
                     Code = int.Parse(element.Element("Code").Value),
-                    Region = element.Element("nom_comarca").Value,
+                    Region = element.Element("Region").Value,
                     Population = int.Parse(element.Element("Population").Value),
-                    DomesticNetwork = int.Parse(element.Element("DomesticNetwork").Value),
-                    EconomicActOwnSource = int.Parse(element.Element("EconomicActOwnSource").Value),
+					DomesticNetwork = int.Parse(element.Element("DomesticNetwork").Value),
+					EconomicActOwnSource = int.Parse(element.Element("EconomicActOwnSource").Value),
                     Total = int.Parse(element.Element("Total").Value),
                     HouseholdConsumCapita = decimal.Parse(element.Element("HouseholdConsumCapita").Value)
                 });
             }
-            WaterConsumes = WaterConsumes.Concat(consums).ToList();*/
+            WaterConsumes = WaterConsumes.Concat(consums).ToList();
         }
     }
 }
