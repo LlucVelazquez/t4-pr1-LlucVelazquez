@@ -20,7 +20,7 @@ namespace t4_pr1_LlucVelazquez.Pages
         public List<EnergyIndicator> GasConsumMore100 => EnergyIndicators.Where(i => i.CCAC_GasolinaAuto > 100).OrderByDescending(i => i.CCAC_GasolinaAuto).ToList();
         public List<(int any, decimal mitjanaProduccioNeta)> ProductionAverageForYear => EnergyIndicators.GroupBy(i => i.Data.Year)
                      .Select(g => (any: g.Key, mitjanaProduccioNeta: g.Average(i => i.CDEEBC_ProdNeta))).OrderBy(r => r.any).ToList();
-        public List<EnergyIndicator> ElectricalDemand => EnergyIndicators.Where(i => i.CDEEBC_DemandaElectr > 4000 && i.CDEEBC_ProdDisp < 300).ToList();
+        public List<EnergyIndicator> ElectricalDemand => EnergyIndicators.Where(i => i.CDEEBC_DemandaElectr >= 4000 && i.CDEEBC_ProdDisp <= 3000).OrderBy(i => i.CDEEBC_DemandaElectr).ToList();
         public void OnGet()
         {
             string jsonFile = FileWorking.File.ReadAllText(@"ModelData\indicadors_energetics_cat.json");
