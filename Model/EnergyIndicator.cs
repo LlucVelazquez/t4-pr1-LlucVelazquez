@@ -4,7 +4,7 @@ namespace t4_pr1_LlucVelazquez.Model
 {
     public class EnergyIndicator
     {
-        public DateTime Data { get; set; }
+        public DateOnly Data { get; set; }
         public decimal PBEE_Hidroelectr { get; set; }
         public decimal PBEE_Carbo { get; set; }
         public decimal PBEE_GasNat { get; set; }
