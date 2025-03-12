@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="t4_pr1_LlucVelazquez.Model.WaterConsume" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAhAACAAAKAAAgAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\WaterConsume.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Model.Simulation" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAgBAEAAAAAAhBAAAAAAAAAEA=</HashCode>
+      <FileName>Model\Simulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Model.EnergyIndicator" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIIhAQQIZAEgDEQAAQAIAAsICAIIQBAhECIAgAAAAwE=</HashCode>
+      <FileName>Model\EnergyIndicator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Pages.AddEnergyIndicatorModel" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIA=</HashCode>
+      <FileName>Pages\AddEnergyIndicator.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Pages.AddSimulationModel" Collapsed="true">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Pages\AddSimulation.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Pages.AddWaterConsumeModel" Collapsed="true">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Pages\AddWaterConsume.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Pages.EnergyIndicatorsModel" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEgABgAACAAAQAAIAEQAA=</HashCode>
+      <FileName>Pages\EnergyIndicators.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Pages.SimulationsModel" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAIAAAAA=</HashCode>
+      <FileName>Pages\Simulations.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="t4_pr1_LlucVelazquez.Pages.WaterConsumeModel" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAcAAIAAAAA=</HashCode>
+      <FileName>Pages\WaterConsume.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
