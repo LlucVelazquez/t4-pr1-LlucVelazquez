@@ -74,6 +74,26 @@
 <h2>Mitjana del consum d'aigua per comarca</h2>
 <table class="table">
 	<thead>
+		<tr
+			<td>Comarca</td
+			<td>Total</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var p in Model.AverageRegions)
+		{
+			<tr>
+				<td>@p.Region</td>
+				<td>@p.Total</td>
+			</tr>
+		}
+	</tbody>
+</table>
+<p>Quantitat de registres: @Model.AverageRegions.Count()</p>
+<br />
+<h2>Comarques amb valors de consum sospitosos d'aigua </h2>
+<table class="table">
+	<thead>
 		<tr>
 			<td>Any</td>
 			<td>Codi comarca</td>
@@ -86,7 +106,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		@foreach (var p in Model.AverageRegions)
+		@foreach (var p in Model.RegionsConsumeSus)
 		{
 			<tr>
 				<td>@p.Year</td>
@@ -101,5 +121,5 @@
 		}
 	</tbody>
 </table>
-<p>Quantitat de registres: @Model.AverageRegions.Count()</p>
+<p>Quantitat de registres: @Model.RegionsConsumeSus.Count()</p>
 <p>@Model.FileErrorMessage</p>

@@ -16,8 +16,10 @@ namespace t4_pr1_LlucVelazquez.Pages
     {
         public string FileErrorMessage;
         public List<WaterConsume> WaterConsumes { get; set; } = new List<WaterConsume>();
-        public List<WaterConsume> Top10Regions => WaterConsumes.OrderByDescending(w => w.Total).Take(10).ToList();
+        public List<WaterConsume> Top10Regions => WaterConsumes.Where(i => i.Year == 2023).OrderByDescending(w => w.Total).Take(10).ToList();
         public List<WaterConsume> AverageRegions => WaterConsumes.GroupBy(w => w.Region).Select(g => new WaterConsume{Region = g.Key, Total = (int)g.Average(w => w.Total)}).OrderBy(w => w.Total).ToList();
+        public List<WaterConsume> RegionsConsumeSus => WaterConsumes.Where(c => c.HouseholdConsumCapita >= 1000).ToList();
+
 
         public void OnGet()
         {
